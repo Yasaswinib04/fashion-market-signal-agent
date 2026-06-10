@@ -1,0 +1,23 @@
+{
+  "name": "fashion-market-signal-agent",
+  "version": "1.0.0",
+  "description": "POC: Browser automation for collecting fashion market signals from Myntra and Meesho",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build": "tsc",
+    "postinstall": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "playwright": "^1.49.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
